@@ -1,0 +1,165 @@
+<style>
+    input[type='text']{
+text-transform: capitalize;
+color: cadetblue;
+text-align: center;
+font-weight: bold;
+font-size: large;
+background-color:violet;
+border-radius: 5px 2px 5px 2px;
+    }
+    input[type='email']{
+        background-color: rgb(109, 8, 176);
+        text-align: center;
+        color: blue;
+        font-size: large;
+        font-weight: lighter;
+        text-decoration: double;
+    }
+    input[type='checkbox']
+    {
+        color: red;
+        background-color: aquamarine;
+        border-radius: 30px;
+        text-align: center;
+    }
+    input[type='radio']{
+        background-color: aqua;
+    }
+    input[type='number']{
+        background-color: aquamarine;
+        text-align: center;
+        font-weight: 500;
+        font-size: larger;
+    }
+    input[type='password']{
+        background-color: aquamarine;
+        text-align: center;
+        
+    }
+    textarea{
+        background-color: antiquewhite;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: medium;
+    }
+    button{
+        color: blue;
+        background-color: cadetblue;
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+    }
+    button:hover{
+        background-color: yellow;
+    }
+    input[type='text']:active{
+
+background-color: violet;
+    }
+    input[type='number']:focus{
+        background-color: yellow;
+    }
+    input[type='email']:active{
+        background-color: turquoise;
+    }
+
+</style>
+
+<form >
+
+    <label  for="name">Full Name-:</label>
+    <input style="text-align: center;" type="text" autofocus required><br>
+    <label  for="email">Email-:</label>
+    <input type="email" required placeholder="abc@gmail.com"><br>
+    <label for="number">Number</label>
+    <input type="number" minlength="10" maxlength="10"><br>
+    <label  for="password">Password</label>
+    <input type="password" pattern="[az,09,AZ]" required><br>
+  <label for="">Birth Date</label>
+  <input type="date" required placeholder="DD/MM/YYYY"><br>
+ 
+    <label  for="gender">Gender</label>
+    <input type="radio" name="gender"><label for="">Male</label>
+    <input type="radio" name="gender" ><label for="">Female</label><br>
+    <label for="checkbox">Skills</label>
+    <input type="checkbox" name="skills" id="skills"><label for="HTML">HTML</label>
+    <input type="checkbox" name="skills" id="skills"><label for="CSS">CSS</label>
+    <input type="checkbox" name="skills" id="skills"><label for="javascript">Javascript</label>
+    <input type="checkbox" name="skills" id="skills"><label for="python">Python</label>
+    <input type="checkbox" name="skills" id="skills"><label for="typescript">Typescript</label>
+    <input type="checkbox" name="skills" id="skills"><label for="angular">Angular</label>
+    <input type="checkbox" name="skills" id="skills"><label for="java">Java</label><br>
+    <label for="graduation">Graduation-:</label>
+    <select name="graduation" >
+        <option value="">Select Option</option>
+        <option value="bsc">BSC</option>
+        <option value="bsc">BCS</option>
+        <option value="bsc">B.Com</option>
+        <option value="bsc">BA</option>
+        <option value="bsc">BSW</option>
+        <option value="bsc">BCA</option>
+    </select><br>
+    <label for="">Graduation Year-:</label>
+    <input type="number" value="2020"><br>
+    <label for="">Certificate</label>
+<input type="file" required><br>
+    <label for="country">Coutry</label>
+    <input type="text" value="India" readonly ><br>
+    <label for="">Required Knowdlge About Language</label>
+<details>
+<summary>Must Be</summary>
+<summary>HTML5</summary>
+<summary>CSS</summary>
+ <summary>Javascript</summary>
+ <summary>Typescript</summary>
+ <summary>Angular</summary>
+</details>
+<label for="">Address</label><br>
+<textarea name="" id="" cols="30" rows="10"></textarea><br>
+
+<button type="submit" name="button">Submit</button>
+<button type="reset" name="button">Reset</button>
+</form>
+<style>
+    li::marker{
+        color: red;
+        background-color: aquamarine;
+        
+        background-color: tomato;
+    }
+    li::selection{
+        color: rgb(197, 130, 42);
+    }
+    li::after{
+        content:'Hello';
+        color: blue;
+        background-color: aliceblue;
+    }
+    li::before{
+        content:'fruits';
+    }
+    p::first-line{
+color: rgb(22, 96, 96);
+font-weight: bold;
+font-size: larger;
+font-family: Arial, Helvetica, sans-serif;
+    }
+
+</style>
+<ol >
+    <li>Apple</li>
+    <li>Ball</li>
+    <li>Cat</li>
+    <li>Dog</li>
+    <li>Egg</li>
+    <li>Fish</li>
+</ol>
+<p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Libero dicta, vero eligendi odit maxime magnam repellendus optio,
+    nam voluptatem saepe explicabo cupiditate, totam voluptate omnis aut aspernatur
+    ratione voluptates assumenda.
+</p>
